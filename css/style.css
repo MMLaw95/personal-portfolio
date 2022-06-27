@@ -1,5 +1,5 @@
 h1 {
-  color: black;
+  color: white;
   font-family: "Playfair Display", serif;
   font-weight: bold;
 }
@@ -7,4 +7,19 @@ h1 {
 p {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
+}
+
+.hero {
+  background: #22252e;
+  text-align: right;
+  color: white;
+}
+
+.hero .btn-branding {
+  background: #3a43ad;
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
