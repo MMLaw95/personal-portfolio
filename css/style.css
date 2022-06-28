@@ -1,3 +1,11 @@
+:root {
+  --branding-color: white;
+  --secondary-color: #64664c;
+  --tertiary-color: black;
+  --heading-font-family: "Inter", sans-serif;
+  --default-font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   background: #22252e;
 }
@@ -9,23 +17,23 @@ p {
 } */
 
 h1 {
-  color: white;
+  color: var(--branding-color);
   font-size: 96px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--heading-font-family);
   font-weight: 700;
 }
 
 h2 {
-  color: white;
-  font-family: "Inter", sans-serif;
+  color: var(--branding-color);
+  font-family: var(--heading-font-family);
   font-weight: normal;
 }
 
 p {
   font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--heading-font-family);
   font-weight: normal;
-  color: white;
+  color: var(--branding-color);
 }
 
 .mug {
@@ -35,23 +43,23 @@ p {
 .hero {
   text-align: center;
   padding: 220px 20px;
-  color: white;
+  color: var(--branding-color);
 }
 
 .hero .btn-branding {
-  background: black;
+  background: var(--tertiary-color);
   border-radius: 0%;
-  color: white;
+  color: var(--branding-color);
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--default-font-family);
   font-weight: 700;
   line-height: 27px;
   padding: 15px 30px;
-  border-color: white;
+  border-color: var(--branding-color);
 }
 
 .name {
-  background: white;
+  background: var(--branding-color);
   color: #22252e;
 }
 
@@ -69,11 +77,11 @@ p {
 }
 
 .btn-launch-button {
-  background: #64664c;
+  background: var(--secondary-color);
   border-radius: 0%;
-  color: white;
+  color: var(--branding-color);
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--default-font-family);
   font-weight: 700;
   line-height: 27px;
   padding: 15px 30px;
@@ -100,8 +108,8 @@ p {
   }
   .hero {
     text-align: center;
-    padding: 130px 20px;
-    color: white;
+    padding: 95px 20px;
+    color: var(--branding-color);
   }
 }
 
@@ -114,6 +122,14 @@ p {
   h1 {
     font-size: 40px;
   }
+  .hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--branding-color);
+  }
+  .btn-branding {
+    margin-top: -41px;
+  }
 }
 @media (max-width: 576px) {
   h1 {
@@ -121,7 +137,7 @@ p {
   }
   .name {
     background: #22252e;
-    color: white;
+    color: var(--branding-color);
   }
   .mug {
     margin: 30px 0px -155px;
@@ -129,6 +145,6 @@ p {
   .hero {
     text-align: center;
     padding: 200px 20px;
-    color: white;
+    color: var(--branding-color);
   }
 }
