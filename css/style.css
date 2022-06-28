@@ -85,20 +85,26 @@ p {
   text-align: center;
 }
 
-@media (max-width: 1200) {
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+  h1 {
+    font-size: 78px;
+  }
+}
+
+@media (max-width: 1200px) {
   .project-title {
     text-align: center;
     font-size: 40px;
     margin-bottom: 40px;
     font-weight: 700;
   }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1400px) {
-  h1 {
-    font-size: 78px;
+  .hero {
+    text-align: center;
+    padding: 130px 20px;
+    color: white;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   h1 {
     font-size: 56px;
