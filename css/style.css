@@ -113,6 +113,11 @@ p {
     color: var(--branding-color);
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .btn-branding {
+    margin-top: -15px;
+  }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   h1 {
@@ -125,7 +130,7 @@ p {
   }
   .hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 73px 20px;
     color: var(--branding-color);
   }
   .btn-branding {
@@ -149,3 +154,30 @@ p {
     color: var(--branding-color);
   }
 }
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  .mug {
+    margin: 33px 0px -155px;
+  }
+  .hero {
+    text-align: center;
+    padding: 50px 20px;
+    color: var(--branding-color);
+  }
+  .btn-branding {
+    margin-top: -40px;
+  }
+}
+/* @media only screen and (max-width: 736px) and (orientation: landscape) {
+  .mug {
+    margin: 33px 0px -155px;
+  }
+  .hero {
+    text-align: center;
+    padding: 50px 20px;
+    color: var(--branding-color);
+  }
+  .btn-branding {
+    margin-top: -40px;
+  }
+} */
