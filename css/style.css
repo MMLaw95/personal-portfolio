@@ -126,4 +126,9 @@ p {
   .mug {
     margin: 30px 0px -155px;
   }
+  .hero {
+    text-align: center;
+    padding: 200px 20px;
+    color: white;
+  }
 }
