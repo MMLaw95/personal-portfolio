@@ -88,6 +88,19 @@ p {
   text-align: center;
 }
 
+.about-header {
+  padding: 200px 20px 100px;
+}
+
+.about-header-font {
+  font-weight: 700;
+}
+
+.about-section {
+  margin: 30px;
+  padding: 160px 20px;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1400px) {
   h1 {
     font-size: 78px;
@@ -121,6 +134,20 @@ p {
   }
   .btn-branding {
     margin-top: -32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-header {
+    padding: 200px 20px 50px;
+  }
+  .about-section {
+    text-align: center;
+    margin: 0px;
+    padding: 0px 20px 50px;
+  }
+  .mug-2 {
+    text-align: center;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
