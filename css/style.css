@@ -70,7 +70,7 @@ p {
   color: #22252e;
 }
 
-.project-header {
+#project-header {
   padding: 0px 20px 100px;
 }
 
@@ -108,7 +108,7 @@ p {
   text-align: center;
 }
 
-.about-header {
+#about-header {
   padding: 200px 20px 100px;
 }
 
