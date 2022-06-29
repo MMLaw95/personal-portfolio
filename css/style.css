@@ -3,6 +3,7 @@
   --secondary-color: #22252e;
   --tertiary-color: black;
   --quaternary-color: #64664c;
+  --quinary-color: #99816b;
   --heading-font-family: "Inter", sans-serif;
   --default-font-family: Arial, Helvetica, sans-serif;
 }
@@ -19,9 +20,15 @@ h1 {
 }
 
 h2 {
-  color: var(--branding-color);
+  color: var(--quinary-color);
   font-family: var(--heading-font-family);
   font-weight: normal;
+}
+
+h3 {
+  color: var(--branding-color);
+  font-family: var(--heading-font-family);
+  font-weight: 700;
 }
 
 p {
@@ -56,6 +63,19 @@ p {
 .name {
   background: var(--branding-color);
   color: #22252e;
+}
+
+.page-name {
+  background-color: var(--quinary-color);
+  color: #22252e;
+}
+
+.project-header {
+  padding: 0px 20px 100px;
+}
+
+.project-header-font {
+  font-weight: 700;
 }
 
 .project-title {
