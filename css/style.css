@@ -11,12 +11,6 @@ body {
   background: #22252e;
 }
 
-/* h1,
-h2,
-p {
-  margin-top: 200;
-} */
-
 h1 {
   color: var(--branding-color);
   font-size: 96px;
@@ -99,29 +93,34 @@ p {
     font-size: 78px;
   }
 }
-
 @media (max-width: 1200px) {
   .project-title {
-    text-align: center;
     font-size: 40px;
     margin-bottom: 40px;
-    font-weight: 700;
   }
   .hero {
-    text-align: center;
     padding: 95px 20px;
-    color: var(--branding-color);
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .btn-branding {
-    margin-top: -15px;
+  .hero {
+    padding: 139px 20px;
   }
 }
-
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .btn-branding {
+    margin-top: -32px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   h1 {
     font-size: 56px;
+  }
+  .hero {
+    margin-top: -20px;
+  }
+  .btn-branding {
+    margin-top: -32px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
@@ -129,9 +128,7 @@ p {
     font-size: 40px;
   }
   .hero {
-    text-align: center;
     padding: 73px 20px;
-    color: var(--branding-color);
   }
   .btn-branding {
     margin-top: -41px;
@@ -149,26 +146,11 @@ p {
     margin: 30px 0px -155px;
   }
   .hero {
-    text-align: center;
     padding: 200px 20px;
     color: var(--branding-color);
   }
 }
-
-@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
-  .mug {
-    margin: 33px 0px -155px;
-  }
-  .hero {
-    text-align: center;
-    padding: 50px 20px;
-    color: var(--branding-color);
-  }
-  .btn-branding {
-    margin-top: -40px;
-  }
-}
-/* @media only screen and (max-width: 736px) and (orientation: landscape) {
+/* @media screen and (device-width: 412px) and (device-height: 915px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
   .mug {
     margin: 33px 0px -155px;
   }
@@ -181,3 +163,16 @@ p {
     margin-top: -40px;
   }
 } */
+@media only screen and (max-width: 736px) and (orientation: landscape) {
+  .mug {
+    margin: 33px 0px -155px;
+  }
+  .hero {
+    text-align: center;
+    padding: 50px 20px;
+    color: var(--branding-color);
+  }
+  .btn-branding {
+    margin-top: -40px;
+  }
+}
