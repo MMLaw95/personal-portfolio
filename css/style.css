@@ -104,6 +104,7 @@ p {
 }
 
 .btn-launch-button {
+  display: inline;
   background: var(--quaternary-color);
   border-radius: 0%;
   font-size: 20px;
