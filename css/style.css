@@ -36,7 +36,7 @@ h1 {
 }
 
 h2 {
-  color: var(--quinary-color);
+  color: #a39690;
   font-weight: 700;
 }
 
@@ -75,7 +75,9 @@ p {
 }
 
 .page-name {
-  background-color: var(--quinary-color);
+  border-top: 8px solid #6d6b6d;
+  border-bottom: 8px solid #6d6b6d;
+  background-color: #a39690;
   color: #22252e;
 }
 
@@ -118,7 +120,7 @@ p {
 }
 
 #about-header {
-  padding: 200px 20px 100px;
+  padding: 75px 20px 100px;
 }
 
 .about-header-font {
@@ -132,13 +134,7 @@ p {
 }
 
 #epilogue-header {
-  padding: 200px 20px 0px;
-}
-
-.epilogue-paragraph {
-  margin: 30px;
-  padding: 50px 20px;
-  text-align: center;
+  padding: 75px 20px 60px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1400px) {
@@ -212,9 +208,6 @@ p {
   .hero {
     padding: 200px 20px;
     color: var(--branding-color);
-  }
-  .mug-2 {
-    text-align: center;
   }
 }
 
