@@ -13,30 +13,40 @@ body {
   margin: 0px 0px 100px;
 }
 
-h1 {
-  color: var(--branding-color);
-  font-size: 96px;
+h1,
+h2,
+h3,
+h4,
+p {
   font-family: var(--heading-font-family);
+}
+
+h1,
+h3,
+p,
+.hero,
+.btn-branding,
+.btn-launch-button {
+  color: var(--branding-color);
+}
+
+h1 {
+  font-size: 96px;
   font-weight: 700;
 }
 
 h2 {
   color: var(--quinary-color);
-  font-family: var(--heading-font-family);
-  font-weight: normal;
+  font-weight: 700;
 }
 
 h3 {
-  color: var(--branding-color);
-  font-family: var(--heading-font-family);
   font-weight: 700;
 }
 
 p {
   font-size: 16px;
-  font-family: var(--heading-font-family);
   font-weight: normal;
-  color: var(--branding-color);
 }
 
 .mug {
@@ -46,13 +56,11 @@ p {
 .hero {
   text-align: center;
   padding: 220px 20px;
-  color: var(--branding-color);
 }
 
 .hero .btn-branding {
   background: var(--tertiary-color);
   border-radius: 0%;
-  color: var(--branding-color);
   font-size: 20px;
   font-family: var(--default-font-family);
   font-weight: 700;
@@ -96,7 +104,6 @@ p {
 .btn-launch-button {
   background: var(--quaternary-color);
   border-radius: 0%;
-  color: var(--branding-color);
   font-size: 20px;
   font-family: var(--default-font-family);
   font-weight: 700;
@@ -122,6 +129,16 @@ p {
 .about-section {
   margin: 30px;
   padding: 160px 20px;
+}
+
+#epilogue-header {
+  padding: 200px 20px 0px;
+}
+
+.epilogue-paragraph {
+  margin: 30px;
+  padding: 50px 20px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1400px) {
@@ -161,16 +178,13 @@ p {
 }
 
 @media (max-width: 768px) {
-  .about-header {
+  #about-header {
     padding: 200px 20px 50px;
   }
   .about-section {
     text-align: center;
     margin: 0px;
     padding: 0px 20px 50px;
-  }
-  .mug-2 {
-    text-align: center;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
@@ -199,7 +213,11 @@ p {
     padding: 200px 20px;
     color: var(--branding-color);
   }
+  .mug-2 {
+    text-align: center;
+  }
 }
+
 /* @media screen and (device-width: 412px) and (device-height: 915px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
   .mug {
     margin: 33px 0px -155px;
@@ -213,7 +231,7 @@ p {
     margin-top: -40px;
   }
 } */
-@media only screen and (max-width: 736px) and (orientation: landscape) {
+/* @media only screen and (max-width: 736px) and (orientation: landscape) {
   .mug {
     margin: 33px 0px -155px;
   }
@@ -225,4 +243,4 @@ p {
   .btn-branding {
     margin-top: -40px;
   }
-}
+} */
