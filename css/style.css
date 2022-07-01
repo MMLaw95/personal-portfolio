@@ -11,6 +11,7 @@
 body {
   background: #22252e;
   margin: 0px 0px 100px;
+  font-family: var(--heading-font-family);
 }
 
 nav {
@@ -44,13 +45,13 @@ nav a:hover {
   color: var(--branding-color);
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 p {
   font-family: var(--heading-font-family);
-}
+} */
 
 nav li,
 h1,
@@ -163,6 +164,17 @@ p {
 .about-section {
   margin: 30px;
   padding: 160px 20px;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: var(--quaternary-color);
+  font-size: 24px;
+  text-align: center;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
 }
 
 /* .green {
