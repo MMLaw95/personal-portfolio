@@ -13,6 +13,37 @@ body {
   margin: 0px 0px 100px;
 }
 
+nav {
+  padding: 20px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+/* nav li.active a {
+  color: var(--quinary-color);
+} */
+
+nav a {
+  color: var(--quaternary-color);
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover {
+  color: var(--branding-color);
+}
+
 h1,
 h2,
 h3,
@@ -21,6 +52,7 @@ p {
   font-family: var(--heading-font-family);
 }
 
+nav li,
 h1,
 h3,
 p,
@@ -35,7 +67,8 @@ h1 {
   font-weight: 700;
 }
 
-h2 {
+h2,
+nav li.active a {
   color: var(--quinary-color);
   font-weight: 700;
 }
