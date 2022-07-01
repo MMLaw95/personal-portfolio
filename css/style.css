@@ -85,7 +85,8 @@ p {
   padding: 0px 20px 75px;
 }
 
-.project-header-font {
+.project-header-font,
+.about-header-font {
   font-size: 45px;
   font-weight: 700;
 }
@@ -122,11 +123,6 @@ p {
 #about-header,
 #epilogue-header {
   padding: 75px 20px 75px;
-}
-
-.about-header-font {
-  font-size: 45px;
-  font-weight: 700;
 }
 
 .about-section {
