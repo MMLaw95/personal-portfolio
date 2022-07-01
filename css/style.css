@@ -155,7 +155,8 @@ p {
 
 #project-header,
 #about-header,
-#epilogue-header {
+#epilogue-header,
+#contact-header {
   padding: 200px 20px 75px;
 }
 
