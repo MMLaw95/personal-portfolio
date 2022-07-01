@@ -166,14 +166,23 @@ p {
   padding: 160px 20px;
 }
 
+footer {
+  margin: 0 60px;
+}
+
 footer .email-link {
   text-decoration: none;
   color: var(--quaternary-color);
   font-size: 24px;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+footer .social-links a {
   color: var(--branding-color);
 }
 
