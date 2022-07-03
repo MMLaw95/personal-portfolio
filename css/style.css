@@ -15,10 +15,14 @@ body {
 }
 
 header {
-  padding: 30px 16px;
+  padding: 21px 16px;
   background: var(--secondary-color);
-  /* background: white; */
   color: #f1f1f1;
+}
+
+section {
+  margin: 0;
+  padding: 0;
 }
 
 .sticky {
@@ -39,6 +43,13 @@ nav {
   top: 0;
 }
 
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: auto;
+  z-index: 1030;
+}
+
 nav ul {
   margin: 0;
   padding: 0;
@@ -51,10 +62,6 @@ nav li {
   margin-left: 15px;
 }
 
-/* nav li.active a {
-  color: var(--quinary-color);
-} */
-
 nav a {
   color: var(--quaternary-color);
   font-weight: 700;
@@ -66,14 +73,6 @@ nav a:hover {
   color: var(--branding-color);
 }
 
-/* h1,
-h2,
-h3,
-h4,
-p {
-  font-family: var(--heading-font-family);
-} */
-
 nav li,
 h1,
 h3,
@@ -84,14 +83,19 @@ p,
   color: var(--branding-color);
 }
 
-h1 {
-  font-size: 96px;
-  font-weight: 700;
-}
-
 h2,
 nav li.active a {
   color: var(--quinary-color);
+  font-weight: 700;
+}
+
+nav li.active a:hover {
+  color: var(--branding-color);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 96px;
   font-weight: 700;
 }
 
@@ -136,10 +140,6 @@ p {
   color: #22252e;
 }
 
-/* #project-header {
-  padding: 0px 20px 75px;
-} */
-
 .project-header-font,
 .about-header-font {
   font-size: 45px;
@@ -175,17 +175,15 @@ p {
   text-align: center;
 }
 
-#project-header,
+#project-header {
+  padding: 100px 20px 75px;
+}
+
 #about-header,
 #epilogue-header,
 #contact-header {
-  padding: 200px 20px 75px;
+  padding: 150px 20px 75px;
 }
-
-/* .about-section {
-  margin: 30px;
-  padding: 160px 20px;
-} */
 
 footer {
   margin: 0 60px;
@@ -224,10 +222,6 @@ footer .social-links a:hover {
   transition: all 100ms ease-in-out;
 }
 
-/* .green {
-  background: var(--quaternary-color);
-} */
-
 @media only screen and (min-width: 992px) and (max-width: 1400px) {
   h1 {
     font-size: 78px;
@@ -265,9 +259,11 @@ footer .social-links a:hover {
 }
 
 @media (max-width: 768px) {
-  nav {
-    /* align-items: center; */
-    justify-content: center;
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: auto;
   }
   #about-header {
     padding: 200px 20px 50px;

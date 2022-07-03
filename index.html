@@ -22,29 +22,32 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-
     <script
       src="https://kit.fontawesome.com/630ef5f310.js"
       crossorigin="anonymous"
-    ></script>
+    >
+    </script>
     <link rel="stylesheet" href="/css/style.css" />
-    <title>Meet MML | Front-end Developer | Austin</title>
+  <title>Meet MML | Front-end Developer | Austin</title>
   </head>
   <body>
+
   <header>
-   <div class="container">
-    <nav class="fixed-top">
-        <img src="" class="" alt=""/>
+    <div class="container" id="#home">
+      <nav class="fixed-top">
+        <!-- <img src="" class="" alt=""/> -->
         <ul>
-          <li class="active"><a href="/" title="Homepage">Home</li></a>
-          <li><a href="#about-header" title="About M.M. Lawry">About</li></a>
-          <li><a href="#project-header" title="M.M. Lawry's projects">Portfolio</li></a>
-          <li><a href="#contact-header" title="Contact M.M. Lawry">Contact</li></a>
-          <li><a href="#epilogue-header" title="M.M. Lawry special message">Epilogue</li></a>
+          <li class="home active"><a href="/" title="Homepage">Home</li></a>
+          <li class="about"><a href="#about-header" title="About M.M. Lawry">About</li></a>
+          <li class="project"><a href="#project-header" title="M.M. Lawry's projects">Portfolio</li></a>
+          <li class="contact"><a href="#contact-header" title="Contact M.M. Lawry">Contact</li></a>
+          <li class="epilogue"><a href="#epilogue-header" title="M.M. Lawry special message">Epilogue</li></a>
         </ul>
-       </nav> 
-      </div>
+     </nav>
+    </div>
   </header>
+
+<section>
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
@@ -56,16 +59,16 @@
           <div class="mt-5">
             <a href="#contact-header" class="btn btn-branding" title="Contact M.M. Lawry">Contact me</a
             >
-          </div>
         </div>
       </div>
     </div>
+</section>
+
+   <section>
     <div class="container">
       <div class="row">
-        <div class="col text-center">
-          <div id="project-header">
+        <div class="col text-center" id="project-header">
             <h2><span class="page-name project-header-font">Portfolio</span></h2>
-        </div>
       </div>
      </div>
       <div class="row">
@@ -215,43 +218,45 @@
         </div>
       </div>
     </div>
+</section>
+
+<section>
     <div class="container">
       <div class="row">
-        <div class="col text-center">
-         <div id="about-header">
+        <div class="col text-center" id="about-header">
           <h2><span class="page-name about-header-font">About M.M.Lawry</span></h2>
-        </div>
        </div>
       </div>
       <div class="row">
         <div class="col-md-6">
         <div class="about-section">
-          <p class="about-paragraph mb-5">
+          <p class="about-paragraph">
             I grew up in North Texas. My first stab at coding was on a Radio-Shack Tandy TRS-80 I got for Christmas. Eventually, I dabbled in Visual Basic and SQL while securing an Art degree alongside an Information Systems Minor. Yes, I've heard the jokes. I've worked in a prison, on a cruise ship, at tv stations and was once voted Production Employee of the Year. I like pretending I can sew and take photos while my machine and camera collect dust. I relax by watching Hallmark romances. When I don't want to relax, I binge horror, violence, or something weird. I get a high on fixing/hacking tech gadgets, doing absolutely nothing in the company of friends, and eating meat and potato style meals away from home. I love learning new stuff...current obsession, personal finance tidbits to quench my minimalist thirst.
           </p>
           <a
             href="#project-header"
             title="View my portfolio"
-            class="btn btn-launch-button about-button mb-5"
+            class="btn btn-launch-button about-button"
             >See my work</a
           >
         </div>
-      </div>
+       </div>
         <div class="col-md-6">
          <div class="center text-center">
-          <img src="/images/mug-2.png" class="img-fluid mx-5" />
-        </div>    
-      </div>
+          <img src="/images/mug-2.png" class="img-fluid" />
+        </div>
+        </div>
+       </div>
     </div>
-  </div>
+</section>
+
+<section>
     <div class="container">
       <div class="row">
-        <div class="col text-center">
-        <div id="epilogue-header">
-        <h2><span class="page-name about-header-font">Epilogue</span></h2>
-        </div>
+        <div class="col text-center" id="epilogue-header">        
+        <h2><span class="page-name about-header-font">Epilogue</span></h2>     
       </div>
-    </div>
+      </div>
       <div class="row">
         <div class="col">
         <div class="epilogue-section">
@@ -262,33 +267,34 @@
       </div>
     </div>
     </div>
+ </section>
+
+<section>
  <div class="container">
       <div class="row">
-        <div class="col text-center">    
-         <div id="contact-header">
+        <div class="col text-center" id="contact-header">
           <h2><span class="page-name about-header-font">Contact</span></h2>
-        </div>
        </div>
       </div>
-      
       <div class="row">
         <div class="col text-center">
           <h2>Email</h2>
         </div>
       </div>
-      <footer>
+  </div>
+</section>
+
+  <footer>
       <div class="d-flex justify-content-center">
         <a href="mailto:mlawry95@gmail.com" class="email-link" title="Email M.M. Lawry">mlawry95@gmail.com</a>
       </div>
       <div class="social-links d-flex justify-content-center">
         <a href="https://github.com/MMLaw95" target="_blank"><i class="fa-brands fa-github" title="View my Github profile"></i></a>
       </div>
-    </footer>
-        </div>
-        </div>
-      </div>
-    </div>
-    <script>
+  </footer>
+
+
+<script>
 window.onscroll = function() {stickHeader()};
 
 var header = document.querySelector("header");
@@ -302,5 +308,25 @@ function stickHeader() {
   }
 }
 </script>
+<!-- <script>
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll("nav .container ul li");
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 60) {
+      current = section.getAttribute("id"); }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+};
+</script> -->
   </body>
 </html>
