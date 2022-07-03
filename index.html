@@ -68,7 +68,7 @@
     <div class="container">
       <div class="row">
         <div class="col text-center" id="project-header">
-            <h2><span class="page-name project-header-font">Portfolio</span></h2>
+          <h2><span class="page-name project-header-font">Portfolio</span></h2>
       </div>
      </div>
       <div class="row">
@@ -223,20 +223,20 @@
 <section>
     <div class="container">
       <div class="row">
-        <div class="col text-center" id="about-header">
-          <h2><span class="page-name about-header-font">About M.M.Lawry</span></h2>
+        <div class="col" id="about-header">
+          <h2 class="text-center"><span class="page-name about-header-font">About M.M.Lawry</span></h2>
        </div>
       </div>
       <div class="row">
         <div class="col-md-6">
         <div class="about-section">
-          <p class="about-paragraph">
+          <p class="about-paragraph text-start">
             I grew up in North Texas. My first stab at coding was on a Radio-Shack Tandy TRS-80 I got for Christmas. Eventually, I dabbled in Visual Basic and SQL while securing an Art degree alongside an Information Systems Minor. Yes, I've heard the jokes. I've worked in a prison, on a cruise ship, at tv stations and was once voted Production Employee of the Year. I like pretending I can sew and take photos while my machine and camera collect dust. I relax by watching Hallmark romances. When I don't want to relax, I binge horror, violence, or something weird. I get a high on fixing/hacking tech gadgets, doing absolutely nothing in the company of friends, and eating meat and potato style meals away from home. I love learning new stuff...current obsession, personal finance tidbits to quench my minimalist thirst.
           </p>
           <a
             href="#project-header"
             title="View my portfolio"
-            class="btn btn-launch-button about-button"
+            class="btn btn-launch-button about-button mt-4"
             >See my work</a
           >
         </div>
@@ -253,8 +253,8 @@
 <section>
     <div class="container">
       <div class="row">
-        <div class="col text-center" id="epilogue-header">        
-        <h2><span class="page-name about-header-font">Epilogue</span></h2>     
+        <div class="col text-center" id="epilogue-header">
+        <h2><span class="page-name about-header-font">Epilogue</span></h2>
       </div>
       </div>
       <div class="row">
@@ -264,10 +264,10 @@
             Thank-you to my wonderful parents who always believe my capabilities are more than I can imagine. I love you. I'd also like to recognize the KVUE team as well as plentiful friends and family who have encouraged my growth and new adventures while providing me a foundation to keep building. Yes, I am very lucky indeed.
           </p>
         </div>
-      </div>
+       </div>
+     </div>
     </div>
-    </div>
- </section>
+</section>
 
 <section>
  <div class="container">
@@ -294,39 +294,19 @@
   </footer>
 
 
-<script>
-window.onscroll = function() {stickHeader()};
+    <script>
+    window.onscroll = function() {stickHeader()};
 
-var header = document.querySelector("header");
-var sticky = header.offsetTop;
+    var header = document.querySelector("header");
+    var sticky = header.offsetTop;
 
-function stickHeader() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
-<!-- <script>
-const sections = document.querySelectorAll("section");
-const navLi = document.querySelectorAll("nav .container ul li");
-window.onscroll = () => {
-  var current = "";
-
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    if (pageYOffset >= sectionTop - 60) {
-      current = section.getAttribute("id"); }
-  });
-
-  navLi.forEach((li) => {
-    li.classList.remove("active");
-    if (li.classList.contains(current)) {
-      li.classList.add("active");
+    function stickHeader() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
     }
-  });
-};
-</script> -->
+    </script>
   </body>
-</html>
+  </html>

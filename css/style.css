@@ -176,12 +176,15 @@ p {
 }
 
 #project-header {
-  padding: 100px 20px 75px;
+  padding: 50px 20px 75px;
 }
 
 #about-header,
-#epilogue-header,
 #contact-header {
+  padding: 100px 20px 75px;
+}
+
+#epilogue-header {
   padding: 150px 20px 75px;
 }
 
@@ -232,6 +235,9 @@ footer .social-links a:hover {
     font-size: 40px;
     margin-bottom: 40px;
   }
+  #project-header {
+    padding: 60px 20px 75px;
+  }
   .hero {
     padding: 95px 20px;
   }
@@ -260,22 +266,17 @@ footer .social-links a:hover {
 
 @media (max-width: 768px) {
   .fixed-top {
-    /* position: fixed;
-    top: 0; */
     left: 0;
     right: 0;
   }
 
   nav {
     padding: 0px 10px;
-    display: flex;
     justify-content: center;
-    position: fixed;
-    top: 0;
   }
 
   #about-header {
-    padding: 85px 20px 50px;
+    padding-top: 80px;
   }
   .about-section {
     text-align: center;
@@ -313,10 +314,14 @@ footer .social-links a:hover {
     font-size: 40px;
     font-weight: 700;
   }
+  #about-header {
+    text-align: center;
+  }
   #epilogue-header {
     padding-top: 130px;
   }
-  #contact-header {
+  #contact-header,
+  #project-header {
     padding-top: 100px;
   }
 }
