@@ -260,11 +260,20 @@ footer .social-links a:hover {
 
 @media (max-width: 768px) {
   .fixed-top {
+    /* position: fixed;
+    top: 0; */
+    left: 0;
+    right: 0;
+  }
+
+  nav {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
     position: fixed;
     top: 0;
-    left: auto;
-    right: auto;
   }
+
   #about-header {
     padding: 85px 20px 50px;
   }
