@@ -266,7 +266,7 @@ footer .social-links a:hover {
     right: auto;
   }
   #about-header {
-    padding: 200px 20px 50px;
+    padding: 85px 20px 50px;
   }
   .about-section {
     text-align: center;
@@ -299,6 +299,16 @@ footer .social-links a:hover {
   .hero {
     padding: 200px 20px 30px;
     color: var(--branding-color);
+  }
+  .about-header-font {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  #epilogue-header {
+    padding-top: 130px;
+  }
+  #contact-header {
+    padding-top: 115px;
   }
 }
 
