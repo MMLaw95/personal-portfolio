@@ -325,30 +325,3 @@ footer .social-links a:hover {
     padding-top: 100px;
   }
 }
-
-/* @media screen and (device-width: 412px) and (device-height: 915px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
-  .mug {
-    margin: 33px 0px -155px;
-  }
-  .hero {
-    text-align: center;
-    padding: 50px 20px;
-    color: var(--branding-color);
-  }
-  .btn-branding {
-    margin-top: -40px;
-  }
-} */
-/* @media only screen and (max-width: 736px) and (orientation: landscape) {
-  .mug {
-    margin: 33px 0px -155px;
-  }
-  .hero {
-    text-align: center;
-    padding: 50px 20px;
-    color: var(--branding-color);
-  }
-  .btn-branding {
-    margin-top: -40px;
-  }
-} */
