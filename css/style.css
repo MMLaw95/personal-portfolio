@@ -33,6 +33,10 @@ header {
 
 nav {
   padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
 }
 
 nav ul {
@@ -261,6 +265,10 @@ footer .social-links a:hover {
 }
 
 @media (max-width: 768px) {
+  nav {
+    /* align-items: center; */
+    justify-content: center;
+  }
   #about-header {
     padding: 200px 20px 50px;
   }
