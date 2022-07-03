@@ -9,13 +9,30 @@
 }
 
 body {
-  background: #22252e;
+  background: var(--secondary-color);
   margin: 0px 0px 100px;
   font-family: var(--heading-font-family);
 }
 
+header {
+  padding: 30px 16px;
+  background: var(--secondary-color);
+  /* background: white; */
+  color: #f1f1f1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .hero {
+  padding-top: 100px;
+}
+
 nav {
-  padding: 20px;
+  padding: 0px 20px;
 }
 
 nav ul {

@@ -31,6 +31,7 @@
     <title>Meet MML | Front-end Developer | Austin</title>
   </head>
   <body>
+  <header>
    <div class="container">
     <nav class="d-flex justify-content-between fixed-top">
         <img src="" class="" alt=""/>
@@ -43,6 +44,7 @@
         </ul>
        </nav> 
       </div>
+  </header>
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
@@ -286,5 +288,19 @@
         </div>
       </div>
     </div>
+    <script>
+window.onscroll = function() {stickHeader()};
+
+var header = document.querySelector("header");
+var sticky = header.offsetTop;
+
+function stickHeader() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
   </body>
 </html>
