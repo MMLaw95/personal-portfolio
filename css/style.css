@@ -319,9 +319,10 @@ footer .social-links a:hover {
     padding-top: 0px;
   }
 
-  .about-section {
-    padding-left: 0;
-    padding-right: 0;
+  .about-section,
+  .epilogue-section {
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .about-header-font {
     font-size: 40px;
@@ -329,8 +330,8 @@ footer .social-links a:hover {
   #about-header {
     text-align: center;
     padding-top: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   #epilogue-header {
     padding-top: 85px;
