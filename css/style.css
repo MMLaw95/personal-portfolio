@@ -233,7 +233,7 @@ footer .social-links a:hover {
 }
 @media (max-width: 1200px) {
   .project-title {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 40px;
   }
   #project-header {
