@@ -171,6 +171,16 @@ p {
   border-color: white;
 }
 
+.hero .btn-branding:hover {
+  background-color: var(--quaternary-color);
+}
+
+.btn-launch-button:hover {
+  background-color: var(--quinary-color);
+  color: white;
+  outline-color: white;
+}
+
 .project-description {
   line-height: 30px;
   text-align: center;
