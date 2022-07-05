@@ -154,6 +154,15 @@ p {
   font-weight: 700;
 }
 
+.project-title a {
+  text-decoration: none;
+  color: var(--branding-color);
+}
+
+.project-title a:hover {
+  color: var(--quinary-color);
+}
+
 #project-1 {
   display: block;
   margin-left: auto;
