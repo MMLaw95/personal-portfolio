@@ -169,6 +169,10 @@ p {
   margin-right: auto;
 }
 
+#project-1:hover {
+  outline: 3px solid white;
+}
+
 .btn-launch-button {
   background: var(--quaternary-color);
   border-radius: 0%;
