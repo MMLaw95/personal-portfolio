@@ -204,16 +204,16 @@ p {
   text-align: center;
 }
 
-#project-header {
-  padding: 50px 20px 75px;
-}
-
-#about-header,
-#contact-header {
-  padding: 100px 20px 75px;
+#project-header,
+#about-header {
+  padding: 45px 20px 75px;
 }
 
 #epilogue-header {
+  padding: 175px 20px 75px;
+}
+
+#contact-header {
   padding: 150px 20px 75px;
 }
 
