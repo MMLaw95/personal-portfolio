@@ -327,6 +327,10 @@ footer .social-links a:hover {
   #epilogue-header {
     padding-top: 160px;
   }
+
+  #contact-header {
+    padding-top: 142px;
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
@@ -365,6 +369,10 @@ footer .social-links a:hover {
     padding-top: 0px;
   }
 
+  #project-header {
+    padding-top: 70px;
+  }
+
   .about-section,
   .epilogue-section {
     padding-left: 10px;
@@ -380,10 +388,5 @@ footer .social-links a:hover {
     padding-top: 40px;
     padding-left: 0px;
     padding-right: 0px;
-  }
-
-  #contact-header,
-  #project-header {
-    padding-top: 70px;
   }
 }
