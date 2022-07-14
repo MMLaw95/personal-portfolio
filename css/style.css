@@ -10,7 +10,7 @@
 
 body {
   background: var(--secondary-color);
-  margin: 0px 0px 100px;
+  margin: 0;
   font-family: var(--heading-font-family);
 }
 
@@ -133,6 +133,10 @@ p {
   border-color: var(--branding-color);
 }
 
+.below-hero {
+  margin-bottom: 69px;
+}
+
 .name {
   background: var(--branding-color);
   color: #22252e;
@@ -253,6 +257,10 @@ footer .social-links a:hover {
   font-size: 42px;
 }
 
+.social-links {
+  margin-bottom: 84px;
+}
+
 .fa-brands,
 .fab {
   position: relative;
@@ -271,7 +279,7 @@ footer .social-links a:hover {
     margin-bottom: 40px;
   }
   #project-header {
-    padding: 60px 20px 75px;
+    padding: 0px 20px 75px;
   }
   .hero {
     padding: 95px 20px;
