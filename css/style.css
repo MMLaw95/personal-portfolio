@@ -317,10 +317,15 @@ footer .social-links a:hover {
   #about-header {
     padding-top: 80px;
   }
+
   .about-section {
     text-align: center;
     margin: 0px;
     padding: 0px 20px 50px;
+  }
+
+  #epilogue-header {
+    padding-top: 160px;
   }
 }
 
@@ -378,7 +383,7 @@ footer .social-links a:hover {
   }
 
   #epilogue-header {
-    padding-top: 85px;
+    padding-top: 160px;
   }
 
   #contact-header,
