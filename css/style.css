@@ -9,8 +9,8 @@
 }
 
 body {
+  margin: 0;
   background: var(--secondary-color);
-  margin: 0px 0px 100px;
   font-family: var(--heading-font-family);
 }
 
@@ -31,8 +31,13 @@ section {
   width: 100%;
 }
 
-.sticky + .hero {
+.sticky + .hero-enchilada {
   padding-top: 100px;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
 }
 
 /* .hero-enchilada {
@@ -82,7 +87,7 @@ nav li,
 h1,
 h3,
 p,
-.hero,
+.hero-enchilada,
 .btn-branding,
 .btn-launch-button {
   color: var(--branding-color);
@@ -117,12 +122,12 @@ p {
   margin: 90px 0px 0px;
 }
 
-.hero {
+.hero-enchilada {
   text-align: center;
   padding: 220px 20px;
 }
 
-.hero .btn-branding {
+.hero-enchilada .btn-branding {
   background: var(--tertiary-color);
   border-radius: 0%;
   font-size: 20px;
@@ -189,7 +194,7 @@ p {
   border-color: white;
 }
 
-.hero .btn-branding:hover {
+.hero-enchilada .btn-branding:hover {
   background-color: var(--quaternary-color);
 }
 
@@ -204,7 +209,10 @@ p {
   text-align: center;
 }
 
-#project-header,
+#project-header {
+  padding: 0px 20px 75px;
+}
+
 #about-header {
   padding: 45px 20px 75px;
 }
@@ -271,22 +279,22 @@ footer .social-links a:hover {
     margin-bottom: 40px;
   }
   #project-header {
-    padding: 60px 20px 75px;
+    padding: 0px 20px 75px;
   }
-  .hero {
+  .hero-enchilada {
     padding: 95px 20px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .hero {
+  .hero-enchilada {
     padding: 139px 20px;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .btn-branding {
-    margin-top: -32px;
+    margin-top: -2px;
   }
 }
 
@@ -294,11 +302,11 @@ footer .social-links a:hover {
   h1 {
     font-size: 56px;
   }
-  .hero {
+  .hero-enchilada {
     margin-top: -20px;
   }
   .btn-branding {
-    margin-top: -32px;
+    margin-top: -2px;
   }
 }
 
@@ -312,6 +320,11 @@ footer .social-links a:hover {
     padding: 0px 10px;
     justify-content: center;
     font-size: 14px;
+  }
+
+  .name {
+    background: #22252e;
+    color: var(--branding-color);
   }
 
   #about-header {
@@ -337,11 +350,11 @@ footer .social-links a:hover {
   h1 {
     font-size: 40px;
   }
-  .hero {
+  .hero-enchilada {
     padding: 73px 20px;
   }
   .btn-branding {
-    margin-top: -41px;
+    margin-top: -2px;
   }
 }
 
@@ -350,18 +363,17 @@ footer .social-links a:hover {
     font-size: 30px;
   }
 
-  .name {
-    background: #22252e;
-    color: var(--branding-color);
-  }
-
   .mug {
     margin: 30px 0px -155px;
   }
 
-  .hero {
+  .hero-enchilada {
     padding: 200px 20px 30px;
     color: var(--branding-color);
+  }
+
+  .btn-branding {
+    margin-top: -2px;
   }
 
   .project-title {
@@ -370,7 +382,7 @@ footer .social-links a:hover {
   }
 
   #project-header {
-    padding-top: 70px;
+    padding-top: 0px;
   }
 
   .about-section,
