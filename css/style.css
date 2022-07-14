@@ -364,6 +364,10 @@ footer .social-links a:hover {
     color: var(--branding-color);
   }
 
+  .btn-branding {
+    margin-top: -30px;
+  }
+
   .project-title {
     font-size: 35px;
     padding-top: 0px;
