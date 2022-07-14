@@ -208,9 +208,12 @@ p {
   text-align: center;
 }
 
-#project-header,
+#project-header {
+  padding: 0px 20px 75px;
+}
+
 #about-header {
-  padding: 45px 20px 75px;
+  padding: 115px 20px 75px;
 }
 
 #epilogue-header {
@@ -278,11 +281,16 @@ footer .social-links a:hover {
     font-size: 30px;
     margin-bottom: 40px;
   }
+
   #project-header {
     padding: 0px 20px 75px;
   }
+
   .hero {
     padding: 95px 20px;
+  }
+  .below-hero {
+    margin-bottom: 40px;
   }
 }
 
@@ -302,9 +310,11 @@ footer .social-links a:hover {
   h1 {
     font-size: 56px;
   }
+
   .hero {
     margin-top: -20px;
   }
+
   .btn-branding {
     margin-top: -32px;
   }
