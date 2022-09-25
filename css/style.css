@@ -183,29 +183,22 @@ p {
 }
 
 #project-1:hover {
-  outline: 4px solid #99816b;
+  /* outline: 4px solid #99816b; */
+  transform: scale(1.1);
 }
 
-.btn-launch-button {
+.btn-launch-button,
+.btn-launch-button:visited,
+.btn-launch-button:link {
   background: var(--quaternary-color);
   border-radius: 0%;
+  color: var(--branding-color);
   font-size: 20px;
   font-family: var(--default-font-family);
   font-weight: 700;
   line-height: 27px;
   padding: 15px 30px;
-  border-color: white;
-}
-
-.btn-launch-button:visited {
-  background: var(--quaternary-color);
-  border-radius: 0%;
-  font-size: 20px;
-  font-family: var(--default-font-family);
-  font-weight: 700;
-  line-height: 27px;
-  padding: 15px 30px;
-  border-color: white;
+  border-color: var(--branding-color);
 }
 
 .hero .btn-branding:hover {
@@ -214,8 +207,8 @@ p {
 
 .btn-launch-button:hover {
   background-color: var(--quinary-color);
-  color: white;
-  outline-color: white;
+  color: var(--branding-color);
+  outline-color: var(--branding-color);
 }
 
 .project-description {
