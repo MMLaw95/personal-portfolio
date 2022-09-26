@@ -184,7 +184,8 @@ p {
 
 #project-1:hover {
   /* outline: 4px solid #99816b; */
-  transform: scale(1.1);
+  border: none;
+  transform: scale(1);
 }
 
 .btn-launch-button,
