@@ -286,14 +286,28 @@ footer {
 
 .fa-react {
   transition: all 100ms ease-in-out;
-  font-size: 24px;
   color: #61dbfb;
+  font-size: 24px;
   top: 0px;
 }
 
 .fa-react:hover {
-  font-size: 26px;
+  color: var(--quinary-color);
 }
+
+/* .fa-react:hover {
+  transition: 0.9s;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+} */
+
+/* .fa-react:hover {
+  transition: all 100ms ease-in-out;
+  font-size: 26px;
+} */
 
 @keyframes opening {
   from {
