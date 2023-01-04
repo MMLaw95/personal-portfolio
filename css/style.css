@@ -298,9 +298,9 @@ footer {
   color: var(--quinary-color);
 }
 
-.fa-spin {
+/* .fa-spin {
   animation-duration: 3s;
-}
+} */
 
 /* .fa-react:hover {
   transition: 0.9s;
