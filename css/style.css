@@ -445,38 +445,9 @@ footer {
     font-size: 30px;
   }
 
-  /* .name {
+  .name {
     background: #22252e;
     color: var(--branding-color);
-  } */
-
-  .name {
-    margin: 0;
-    animation: opening 1s ease-in-out;
-    color: var(--branding-color);
-    /* background: var(--secondary-color); */
-    font-family: var(--heading-font-family);
-    background-color: var(--secondary-color);
-    animation-name: example;
-    animation-duration: 130s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
-
-  @keyframes example {
-    0% {
-      background-color: var(--secondary-color);
-    }
-    25% {
-      background-color: var(--tertiary-color);
-    }
-    50% {
-      background-color: var(--secondary-color);
-    }
-    100% {
-      background-color: var(--tertiary-color);
-    }
   }
 
   .mug {
