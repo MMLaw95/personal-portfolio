@@ -128,7 +128,10 @@ p {
   padding: 220px 20px;
 }
 
-.hero .btn-branding {
+.hero .btn-branding,
+.hero .btn-branding:link,
+.hero .btn-branding:active,
+.hero .btn-branding:visited {
   background: var(--tertiary-color);
   border-radius: 0%;
   font-size: 20px;
@@ -195,8 +198,9 @@ p {
 }
 
 .btn-launch-button,
-.btn-launch-button:visited,
-.btn-launch-button:link {
+.btn-launch-button:link,
+.btn-launch-button:active,
+.btn-launch-button:visited {
   background: var(--quaternary-color);
   border-radius: 0%;
   color: var(--branding-color);
@@ -239,11 +243,53 @@ p {
   padding: 150px 20px 75px;
 }
 
+/* .fa-brands,
+.fa-solid,
+.fab {
+  position: relative;
+  top: -46px;
+} */
+
+.fa-react,
+.fa-react:link,
+.fa-react:active,
+.fa-react:visited {
+  transition: all 100ms ease-in-out;
+  color: #61dbfb;
+  font-size: 24px;
+  top: 0px;
+}
+
+.fa-react:hover {
+  color: var(--quinary-color);
+}
+
+/* .fa-spin {
+  animation-duration: 3s;
+} */
+
+/* .fa-react:hover {
+  transition: 0.9s;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+} */
+
+/* .fa-react:hover {
+  transition: all 100ms ease-in-out;
+  font-size: 26px;
+} */
+
 footer {
   margin: 0 60px;
 }
 
-footer .social-links a {
+footer .social-links a,
+footer .social-links a:link,
+footer .social-links a:active,
+footer .social-links a:visited {
   line-height: 49px;
   text-align: center;
   width: 50px;
@@ -279,42 +325,6 @@ footer .email-link:hover {
 footer {
   margin-bottom: 50px;
 }
-
-/* .fa-brands,
-.fa-solid,
-.fab {
-  position: relative;
-  top: -46px;
-} */
-
-.fa-react {
-  transition: all 100ms ease-in-out;
-  color: #61dbfb;
-  font-size: 24px;
-  top: 0px;
-}
-
-.fa-react:hover {
-  color: var(--quinary-color);
-}
-
-/* .fa-spin {
-  animation-duration: 3s;
-} */
-
-/* .fa-react:hover {
-  transition: 0.9s;
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-} */
-
-/* .fa-react:hover {
-  transition: all 100ms ease-in-out;
-  font-size: 26px;
-} */
 
 @keyframes opening {
   from {
