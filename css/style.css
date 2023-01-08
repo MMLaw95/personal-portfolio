@@ -8,8 +8,12 @@
   --default-font-family: Arial, Helvetica, sans-serif;
 }
 
+* .border-box {
+  border: 5px solid #fff;
+  box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
 body {
-  margin: 0;
   animation: opening 1s ease-in-out;
   background: var(--secondary-color);
   font-family: var(--heading-font-family);
@@ -182,19 +186,20 @@ p {
   color: var(--quinary-color);
 }
 
-#project-1 {
-  display: block;
-  z-index: -3;
-  margin-left: auto;
-  margin-right: auto;
-  transition: 0.2s ease-in-out;
+.project-1 {
+  position: relative;
+  overflow: hidden;
 }
 
-#project-1:hover {
-  /* outline: 4px solid #99816b; */
-  border: none;
-  transform: scale(1.05);
-  z-index: -3;
+.project-1 img {
+  max-width: 100%;
+  transition: all 0.3s;
+  display: block;
+  transform: scale(1);
+}
+
+.project-1:hover img {
+  transform: scale(1.1);
 }
 
 .btn-launch-button,
@@ -243,13 +248,6 @@ p {
   padding: 150px 20px 75px;
 }
 
-/* .fa-brands,
-.fa-solid,
-.fab {
-  position: relative;
-  top: -46px;
-} */
-
 .fa-react,
 .fa-react:link,
 .fa-react:active,
@@ -263,6 +261,13 @@ p {
 .fa-react:hover {
   color: var(--quinary-color);
 }
+
+/* .fa-brands,
+.fa-solid,
+.fab {
+  position: relative;
+  top: -46px;
+} */
 
 /* .fa-spin {
   animation-duration: 3s;
@@ -465,8 +470,4 @@ footer {
     padding-left: 10px;
     padding-right: 10px;
   }
-
-  /* .about-header-font {
-    font-size: 33px;
-  } */
 }
