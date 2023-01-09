@@ -203,14 +203,14 @@ p {
   transform: scale(1.25);
 }
 
-/* .project-1 .fidelity img {
-  
+/* .project-1 .fidelity img {  
   animation-direction: normal;
 } */
 
 /* .project-1 .fidelity:hover {
   transform: scale(1.25) translateY(10px);
 } */
+
 /* 
 @keyframes slide {
   0% {
