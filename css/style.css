@@ -194,14 +194,33 @@ p {
 
 .project-1 img {
   max-width: 100%;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
   display: block;
   transform: scale(1);
 }
 
 .project-1:hover img {
-  transform: scale(1.1);
+  transform: scale(1.25);
 }
+
+/* .project-1 .fidelity img {
+  
+  animation-direction: normal;
+} */
+
+/* .project-1 .fidelity:hover {
+  transform: scale(1.25) translateY(10px);
+} */
+/* 
+@keyframes slide {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, -20px);
+  }
+} */
 
 .btn-launch-button,
 .btn-launch-button:link,
