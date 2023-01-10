@@ -371,6 +371,12 @@ footer {
   }
 }
 
+@media (max-width: 1400px) {
+  .project-description {
+    margin-bottom: 4rem;
+  }
+}
+
 @media (max-width: 1200px) {
   .project-title {
     font-size: 30px;
@@ -429,6 +435,10 @@ footer {
     padding: 0px 10px;
     justify-content: center;
     font-size: 14px;
+  }
+
+  .project-description {
+    margin-bottom: 3rem;
   }
 
   .about-section {
