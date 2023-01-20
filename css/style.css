@@ -251,10 +251,20 @@ p {
   outline-color: var(--branding-color);
 }
 
-.project-description {
+.project-description,
+.bottom-row {
   line-height: 30px;
   text-align: center;
   margin-bottom: 5rem;
+}
+
+.project-description,
+.bottom-row {
+  margin-bottom: 5rem;
+}
+
+.bottom-row {
+  margin-bottom: 0;
 }
 
 #project-header {
