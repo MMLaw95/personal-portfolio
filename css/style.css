@@ -54,6 +54,15 @@ section {
   height: 100vh;
 } */
 
+h1,
+h3,
+p,
+.hero,
+.btn-branding,
+.btn-launch-button {
+  color: var(--branding-color);
+}
+
 nav {
   padding: 0px 20px;
   display: flex;
@@ -63,11 +72,16 @@ nav {
   top: 0;
 }
 
-.fixed-top {
-  position: fixed;
-  top: 0;
-  left: auto;
-  z-index: 1030;
+nav ul li a {
+  color: var(--quaternary-color);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: var(--branding-color);
 }
 
 nav ul {
@@ -82,35 +96,16 @@ nav li {
   margin-left: 10px;
 }
 
-nav a {
-  color: var(--quaternary-color);
-  font-weight: 700;
-  text-decoration: none;
-  transition: all 100ms ease-in-out;
-}
-
-nav a:hover {
-  color: var(--branding-color);
-}
-
-nav li,
-h1,
-h3,
-p,
-.hero,
-.btn-branding,
-.btn-launch-button {
-  color: var(--branding-color);
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: auto;
+  z-index: 1030;
 }
 
 h2,
-nav li.active a {
+li a[href="#home"] {
   color: var(--quinary-color);
-  font-weight: 700;
-}
-
-nav li.active a:hover {
-  color: var(--branding-color);
   font-weight: 700;
 }
 
@@ -149,6 +144,7 @@ p {
   line-height: 27px;
   padding: 15px 30px;
   border-color: var(--branding-color);
+  transition: color 0.2s ease-out;
 }
 
 .below-hero {
@@ -239,6 +235,7 @@ p {
   line-height: 27px;
   padding: 15px 30px;
   border-color: var(--branding-color);
+  transition: color 0.2s ease-out;
 }
 
 .hero .btn-branding:hover {
