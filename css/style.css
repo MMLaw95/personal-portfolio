@@ -76,7 +76,7 @@ nav ul li a {
   color: var(--quaternary-color);
   font-weight: 700;
   text-decoration: none;
-  transition: color 0.2s ease-out;
+  transition: 0.4s ease;
 }
 
 nav ul li a:hover,
@@ -144,7 +144,7 @@ p {
   line-height: 27px;
   padding: 15px 30px;
   border-color: var(--branding-color);
-  transition: color 0.2s ease-out;
+  transition: 0.4s ease;
 }
 
 .below-hero {
@@ -180,7 +180,7 @@ p {
 .project-title a {
   text-decoration: none;
   color: var(--branding-color);
-  transition: 0.2s ease-in-out;
+  transition: 0.4s ease;
 }
 
 .project-title a:hover {
@@ -235,7 +235,7 @@ p {
   line-height: 27px;
   padding: 15px 30px;
   border-color: var(--branding-color);
-  transition: color 0.2s ease-out;
+  transition: 0.4s ease;
 }
 
 .hero .btn-branding:hover {
@@ -284,7 +284,7 @@ p {
 .fa-react:link,
 .fa-react:active,
 .fa-react:visited {
-  transition: all 100ms ease-in-out;
+  transition: 0.4s ease;
   color: #61dbfb;
   font-size: 24px;
   top: 0px;
@@ -334,7 +334,7 @@ footer .social-links a:visited {
   margin: 0 11px;
   color: var(--branding-color);
   font-size: 37px;
-  transition: all 0.2s;
+  transition: 0.4s ease;
   /* border: 2px solid white; */
   /* background-color: #6d6b6d; */
   /* border-radius: 100%; */
@@ -352,7 +352,7 @@ footer .email-link {
   font-weight: 700;
   text-align: center;
   margin: 15px 0px 0px;
-  transition: all 0.2s;
+  transition: 0.4s ease;
 }
 
 footer .email-link:hover {
