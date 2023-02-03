@@ -157,6 +157,7 @@ p {
 }
 
 .page-name {
+  padding: 0px 15px;
   border-top: 8px solid #6d6b6d;
   border-bottom: 8px solid #6d6b6d;
   background-color: #a39690;
