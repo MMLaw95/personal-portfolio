@@ -59,6 +59,10 @@ body.light {
   font-weight: normal;
 }
 
+.light .project-description strong {
+  font-weight: 600;
+}
+
 .light nav ul li a:hover {
   color: var(--secondary-color);
 }
