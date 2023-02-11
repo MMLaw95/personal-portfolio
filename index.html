@@ -37,6 +37,7 @@
     <div class="container hero-enchilada">
       <nav class="fixed-top">
         <ul>
+          <button class="toggle"></button>
           <li class="home active"><a href="#home" title="Homepage">Home</a></li>
           <li class="about"><a href="#about-header" title="About me">About</a></li>
           <li class="project"><a href="#project-header" title="My projects">Portfolio</a></li>
@@ -270,7 +271,7 @@
        </div>
         <div class="col-md-6">
          <div class="center text-center">
-          <img src="/src/mug.png" class="img-fluid border border-5" title="MML" />
+          <img src="/src/mug.png" class="img-fluid border border-5 border-box" title="MML" />
          </div>
         </div>
        </div>
@@ -336,26 +337,45 @@
       }
     }
 
+    const body = document.querySelector("body"),
+    toggle = document.querySelector(".toggle");
 
-const links = document.querySelectorAll("nav ul li a");
-
-const linkOffsets = [];
-links.forEach(link => {
-  const section = document.querySelector(link.getAttribute("href"));
-  linkOffsets.push(section.offsetTop - 200); // subtract the height of the fixed header
-});
-
-document.addEventListener("scroll", () => {
-  const scrollPosition = window.pageYOffset + 200; // add the height of the fixed header
-
-  links.forEach((link, index) => {
-    if (scrollPosition >= linkOffsets[index]) {
-      link.classList.add("active");
-    } else {
-      link.classList.remove("active");
+    let getMode = localStorage.getItem("mode");
+    if (getMode && getMode === "light") {
+     body.classList.add("light");
+     toggle.classList.add("active")
     }
-  });
-});
+
+    toggle.addEventListener("click", () => {
+      body.classList.toggle("light");
+
+      if (!body.classList.contains("light")) {
+        return localStorage.setItem("mode", "dark");
+      }
+      localStorage.setItem("mode", "light");
+    });
+
+    toggle.addEventListener("click", () => toggle.classList.toggle("active"));
+
+// const links = document.querySelectorAll("nav ul li a");
+
+// const linkOffsets = [];
+// links.forEach(link => {
+//   const section = document.querySelector(link.getAttribute("href"));
+//   linkOffsets.push(section.offsetTop - 200); // subtract the height of the fixed header
+// });
+
+// document.addEventListener("scroll", () => {
+//   const scrollPosition = window.pageYOffset + 200; // add the height of the fixed header
+
+//   links.forEach((link, index) => {
+//     if (scrollPosition >= linkOffsets[index]) {
+//       link.classList.add("active");
+//     } else {
+//       link.classList.remove("active");
+//     }
+//   });
+// });
 
     </script>
   </body>

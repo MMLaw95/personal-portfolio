@@ -21,6 +21,72 @@ body {
   animation: opening 1s ease-in-out;
   background: var(--secondary-color);
   font-family: var(--heading-font-family);
+  transition: all 0.3s ease-in-out;
+}
+
+body.light {
+  background: linear-gradient(
+    to top,
+    lightgrey 0%,
+    lightgrey 1%,
+    #e0e0e0 26%,
+    #efefef 48%,
+    #d9d9d9 75%,
+    #bcbcbc 100%
+  );
+}
+
+.light header {
+  background: linear-gradient(
+    to top,
+    lightgrey 0%,
+    lightgrey 1%,
+    #e0e0e0 26%,
+    #efefef 48%,
+    #d9d9d9 75%,
+    #bcbcbc 100%
+  );
+}
+
+.light h1,
+.light h3,
+.light p,
+.light .project-title a {
+  color: var(--secondary-color);
+}
+
+.light p {
+  font-weight: normal;
+}
+
+.light nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.light .name {
+  background: var(--secondary-color);
+  color: var(--branding-color);
+}
+
+.light .hero .light .btn-branding,
+.light .hero .btn-branding:link,
+.light .hero .btn-branding:active,
+.light .hero .btn-branding:visited {
+  background: var(--secondary-color);
+}
+
+.light footer .social-links a,
+.light footer .social-links a:link,
+.light footer .social-links a:active,
+.light footer .social-links a:visited {
+  color: var(--secondary-color);
+}
+
+.light .fa-react,
+.light .fa-react:link,
+.light .fa-react:active,
+.light .fa-react:visited {
+  color: #036781;
 }
 
 header {
@@ -61,6 +127,40 @@ p,
 .btn-branding,
 .btn-launch-button {
   color: var(--branding-color);
+}
+
+.toggle {
+  position: relative;
+  bottom: 5px;
+  height: 15px;
+  width: 30px;
+  border-radius: 100px;
+  background-color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  padding: 8px 17px;
+}
+
+.toggle::before {
+  content: "";
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  transition: all 0.3 ease-in-out;
+}
+
+.toggle.active::before {
+  left: calc(100% - 13px - 2px);
+  background: var(--branding-color);
+}
+
+.toggle.active {
+  background-color: var(--secondary-color);
 }
 
 nav {
@@ -145,6 +245,7 @@ p {
   padding: 15px 30px;
   border-color: var(--branding-color);
   transition: 0.4s ease;
+  box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .below-hero {
@@ -154,6 +255,7 @@ p {
 .name {
   background: var(--branding-color);
   color: #22252e;
+  padding: 0px 14px;
 }
 
 .page-name {
@@ -169,6 +271,7 @@ p {
 .misc-header-font {
   font-size: 45px;
   font-weight: 700;
+  box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .project-title {
@@ -237,6 +340,7 @@ p {
   padding: 15px 30px;
   border-color: var(--branding-color);
   transition: 0.4s ease;
+  box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .hero .btn-branding:hover {
@@ -320,6 +424,11 @@ p {
   font-size: 26px;
 } */
 
+.shadow {
+  box-shadow: rgb(0 0 0 / 40%) 1px 4px 12px;
+  box-sizing: border-box;
+}
+
 footer {
   margin: 0 60px;
 }
@@ -341,7 +450,8 @@ footer .social-links a:visited {
   /* border-radius: 100%; */
 }
 
-footer .social-links a:hover {
+footer .social-links a:hover,
+.light footer .social-links a:hover {
   color: var(--quinary-color);
   font-size: 42px;
 }
@@ -484,6 +594,13 @@ footer {
   .name {
     background: #22252e;
     color: var(--branding-color);
+    padding: 0;
+  }
+
+  .light .name {
+    background: none;
+    color: var(--secondary-color);
+    padding: 0;
   }
 
   .mug {
