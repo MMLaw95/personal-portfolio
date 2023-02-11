@@ -86,10 +86,10 @@ body.light {
   color: var(--secondary-color);
 }
 
-.light .fa-react,
-.light .fa-react:link,
-.light .fa-react:active,
-.light .fa-react:visited {
+.light .project-description .fa-react,
+.light .project-description .fa-react:link,
+.light .project-description .fa-react:active,
+.light .project-description .fa-react:visited {
   color: #59cae7;
 }
 
@@ -389,18 +389,45 @@ p {
   padding: 150px 20px 75px;
 }
 
-.fa-react,
-.fa-react:link,
-.fa-react:active,
-.fa-react:visited {
+.project-description .fa-github,
+.project-description .fa-github:link,
+.project-description .fa-github:active,
+.project-description .fa-github:visited,
+.project-description .fa-react,
+.project-description .fa-react:link,
+.project-description .fa-react:active,
+.project-description .fa-react:visited {
   transition: 0.4s ease;
-  color: #61dbfb;
   font-size: 24px;
   top: 0px;
 }
 
-.fa-react:hover {
+.project-description .fa-github {
+  color: var(--branding-color);
+}
+
+.light .project-description .fa-github {
+  color: var(--secondary-color);
+}
+
+.project-description .fa-react {
+  color: #61dbfb;
+  margin: 0px 8px;
+}
+
+.light .project-description .fa-github {
+  color: var(--branding-color);
+}
+
+.project-description .fa-github:hover,
+.project-description .fa-react:hover,
+.light .project-description .fa-github:hover,
+.light .project-description .fa-react:hover {
   color: var(--quinary-color);
+}
+
+.light .project-description .fa-github {
+  color: var(--secondary-color);
 }
 
 /* .fa-brands,
