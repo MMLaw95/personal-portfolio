@@ -151,7 +151,7 @@ p,
   top: 50%;
   left: 2px;
   transform: translateY(-50%);
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .toggle.active::before {
