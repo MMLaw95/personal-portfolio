@@ -398,12 +398,12 @@ p {
 .project-description .fa-react:active,
 .project-description .fa-react:visited {
   transition: 0.4s ease;
-  font-size: 24px;
   top: 0px;
 }
 
 .project-description .fa-github {
   color: var(--branding-color);
+  font-size: 24px;
 }
 
 .light .project-description .fa-github {
@@ -413,6 +413,7 @@ p {
 .project-description .fa-react {
   color: #61dbfb;
   margin: 0px 8px;
+  font-size: 40px;
 }
 
 .light .project-description .fa-github {
