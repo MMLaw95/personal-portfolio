@@ -259,7 +259,7 @@ p {
 .name {
   background: var(--branding-color);
   color: #22252e;
-  padding: 0px 14px;
+  padding: 0px 16px;
 }
 
 .page-name {
