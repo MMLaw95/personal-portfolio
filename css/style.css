@@ -10,6 +10,7 @@
 
 * .border-box {
   border: 5px solid #fff;
+  border-radius: 10px;
   box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.4);
 }
 
@@ -241,7 +242,6 @@ p {
 .hero .btn-branding:active,
 .hero .btn-branding:visited {
   background: var(--tertiary-color);
-  border-radius: 0%;
   font-size: 20px;
   font-family: var(--default-font-family);
   font-weight: 700;
@@ -250,6 +250,7 @@ p {
   border-color: var(--branding-color);
   transition: 0.4s ease;
   box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
 }
 
 .below-hero {
@@ -259,7 +260,8 @@ p {
 .name {
   background: var(--branding-color);
   color: #22252e;
-  padding: 0px 16px;
+  padding: 0px 15px;
+  /* border-radius: 8px; */
 }
 
 .page-name {
@@ -276,6 +278,7 @@ p {
   font-size: 45px;
   font-weight: 700;
   box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.4);
+  /* border-radius: 8px; */
 }
 
 .project-title {
@@ -335,7 +338,7 @@ p {
 .btn-launch-button:active,
 .btn-launch-button:visited {
   background: var(--quaternary-color);
-  border-radius: 0%;
+  border-radius: 30px;
   color: var(--branding-color);
   font-size: 20px;
   font-family: var(--default-font-family);
@@ -515,15 +518,15 @@ footer {
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1400px) {
-  h1 {
-    font-size: 78px;
-  }
-}
-
 @media (max-width: 1400px) {
   .project-description {
     margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+  h1 {
+    font-size: 78px;
   }
 }
 
@@ -562,15 +565,15 @@ footer {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .hero {
-    padding: 139px 20px;
-  }
-}
-
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .btn-branding {
     margin-top: -32px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .hero {
+    padding: 139px 20px;
   }
 }
 
