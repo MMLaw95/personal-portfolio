@@ -650,7 +650,8 @@ footer {
 }
 
 @media (max-width: 576px) {
-  li a[href="#home"] {
+  li a[href="#home"],
+  .light li a[href="#home"] {
     font-weight: 700;
   }
 
