@@ -10,7 +10,7 @@
 
 * .border-box {
   border: 5px solid #fff;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.4);
 }
 
@@ -211,7 +211,7 @@ nav li {
 h2,
 li a[href="#home"] {
   color: var(--quinary-color);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h1 {
@@ -519,6 +519,9 @@ footer {
 }
 
 @media (max-width: 1400px) {
+  h2 {
+    font-size: 1.65rem;
+  }
   .project-description {
     margin-bottom: 4rem;
   }
