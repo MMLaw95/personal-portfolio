@@ -650,6 +650,10 @@ footer {
 }
 
 @media (max-width: 576px) {
+  li a[href="#home"] {
+    font-weight: 700;
+  }
+
   h1 {
     font-size: 30px;
   }
