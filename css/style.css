@@ -651,7 +651,8 @@ footer {
 
 @media (max-width: 576px) {
   li a[href="#home"],
-  .light li a[href="#home"] {
+  .light li a[href="#home"],
+  nav ul li a {
     font-weight: 700;
   }
 
@@ -686,7 +687,7 @@ footer {
   }
 
   .btn-branding {
-    margin-top: -30px;
+    margin-top: -26px;
   }
 
   .project-title {
