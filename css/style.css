@@ -38,6 +38,7 @@ body.light {
 }
 
 .light header {
+  /* background: white; */
   background: linear-gradient(
     to top,
     lightgrey 0%,
@@ -80,6 +81,10 @@ body.light {
 .light .hero .btn-branding:active,
 .light .hero .btn-branding:visited {
   background: var(--secondary-color);
+}
+
+.light .page-name {
+  color: var(--quinary-color);
 }
 
 .light footer .social-links a,
@@ -272,24 +277,29 @@ p {
 
 .page-name {
   padding: 0px 15px;
-  border-top: 8px solid #6d6b6d;
-  border-bottom: 8px solid #6d6b6d;
-  background-color: #a39690;
-  color: #22252e;
+  /* border-top: 8px solid #6d6b6d; */
+  /* border-bottom: 8px solid #6d6b6d; */
+  /* background-color: #a39690; */
+  color: #a39690;
 }
 
 .project-header-font,
 .about-header-font,
 .misc-header-font {
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 700;
-  box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.4);
+  border-bottom: 0.5rem solid #64664c;
+  padding: 0.5rem;
+  /* box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.4); */
   /* border-radius: 8px; */
+  /* text-decoration: #64664c underline;
+  text-decoration-thickness: 0.5rem;
+  text-underline-offset: 1rem; */
 }
 
 .project-title {
   text-align: center;
-  font-size: 44px;
+  font-size: 40px;
   margin-bottom: 40px;
   font-weight: 700;
 }
