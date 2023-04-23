@@ -35,6 +35,10 @@ body.light {
   );
 }
 
+html::-webkit-scrollbar-thumb {
+  background: red;
+}
+
 .light header {
   background: linear-gradient(
     to top,
@@ -510,14 +514,13 @@ footer {
   h1 {
     font-size: 70px;
   }
+
+  .hero {
+    padding: 175px 20px;
+  }
+
   .btn-branding {
     margin-top: -32px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .hero {
-    padding: 139px 20px;
   }
 }
 
@@ -538,9 +541,9 @@ footer {
     font-size: 50px;
   }
 
-  /* .hero {
-    margin-top: -37px;
-  } */
+  .hero {
+    padding: 135px 20px;
+  }
 
   .below-hero {
     margin-bottom: 20px;
@@ -594,7 +597,7 @@ footer {
   }
 
   .hero {
-    padding: 73px 20px;
+    padding: 90px 20px;
   }
 
   .btn-branding {
