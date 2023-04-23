@@ -35,10 +35,6 @@ body.light {
   );
 }
 
-html::-webkit-scrollbar-thumb {
-  background: red;
-}
-
 .light header {
   background: linear-gradient(
     to top,
