@@ -174,7 +174,7 @@ nav {
 
 nav ul li a {
   color: var(--quaternary-color);
-  font-size: 15px;
+  font-size: 0.938rem;
   font-weight: 700;
   text-decoration: none;
   transition: 0.4s ease;
@@ -546,10 +546,6 @@ footer {
     font-size: 50px;
   }
 
-  h2 {
-    font-size: 1rem;
-  }
-
   /* .hero {
     margin-top: -37px;
   } */
@@ -560,6 +556,12 @@ footer {
 
   .btn-branding {
     margin-top: -32px;
+  }
+}
+
+@media (max-width: 992px) {
+  h2 {
+    font-size: 1.15rem;
   }
 }
 
@@ -612,6 +614,7 @@ footer {
   li a[href="#home"],
   .light li a[href="#home"],
   nav ul li a {
+    font-size: 0.875rem;
     font-weight: 700;
   }
 
