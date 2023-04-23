@@ -54,14 +54,6 @@ body.light {
   color: var(--secondary-color);
 }
 
-.light p {
-  font-weight: normal;
-}
-
-/* .light .project-description strong {
-  font-weight: 500;
-} */
-
 .light nav ul li a:hover {
   color: var(--quaternary-color);
   text-decoration: var(--secondary-color) 0.1rem underline;
@@ -228,7 +220,7 @@ h3 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 1.125rem;
   /* font-family: var(--default-font-family); */
   text-transform: none;
 }
