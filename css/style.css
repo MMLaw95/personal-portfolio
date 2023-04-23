@@ -4,8 +4,9 @@
   --tertiary-color: black;
   --quaternary-color: #64664c;
   --quinary-color: #99816b;
-  --heading-font-family: "Inter", sans-serif;
-  --default-font-family: Arial, Helvetica, sans-serif;
+  --heading-font-family: Montserrat, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  /* --default-font-family: font-family: 'Lato', sans-serif; */
 }
 
 * .border-box {
@@ -14,14 +15,11 @@
   box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* * .border-box:hover {
-  border-color: var(--quinary-color);
-} */
-
 body {
   animation: opening 1s ease-in-out;
   background: var(--secondary-color);
   font-family: var(--heading-font-family);
+  text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
 
@@ -38,7 +36,6 @@ body.light {
 }
 
 .light header {
-  /* background: white; */
   background: linear-gradient(
     to top,
     lightgrey 0%,
@@ -61,9 +58,9 @@ body.light {
   font-weight: normal;
 }
 
-.light .project-description strong {
+/* .light .project-description strong {
   font-weight: 500;
-}
+} */
 
 .light nav ul li a:hover {
   color: var(--quaternary-color);
@@ -123,15 +120,6 @@ section {
   padding-top: 100px;
 }
 
-/* .first-page {
-  min-height: 100vh;
-} */
-
-/* .hero-enchilada {
-  width: 100%;
-  height: 100vh;
-} */
-
 h1,
 h3,
 p,
@@ -186,7 +174,8 @@ nav {
 
 nav ul li a {
   color: var(--quaternary-color);
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 700;
   text-decoration: none;
   transition: 0.4s ease;
 }
@@ -218,7 +207,7 @@ nav li {
 h2,
 li a[href="#home"] {
   color: var(--quinary-color);
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .light li a[href="#home"]:hover {
@@ -230,13 +219,18 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  font-size: 1.89rem;
+}
+
 h3 {
   font-weight: 700;
 }
 
 p {
   font-size: 18px;
-  font-weight: 300;
+  /* font-family: var(--default-font-family); */
+  text-transform: none;
 }
 
 .mug {
@@ -254,7 +248,7 @@ p {
 .hero .btn-branding:visited {
   background: var(--tertiary-color);
   font-size: 20px;
-  font-family: var(--default-font-family);
+  /* font-family: var(--default-font-family); */
   font-weight: 700;
   line-height: 27px;
   padding: 15px 30px;
@@ -272,34 +266,24 @@ p {
   background: var(--branding-color);
   color: #22252e;
   padding: 0px 15px;
-  /* border-radius: 8px; */
 }
 
 .page-name {
   padding: 0.5rem 15px;
-  /* border-top: 8px solid #6d6b6d; */
-  /* border-bottom: 8px solid #6d6b6d; */
-  /* background-color: #a39690; */
   color: #a39690;
 }
 
 .project-header-font,
 .about-header-font,
 .misc-header-font {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 700;
-  border-bottom: 0.5rem solid #64664c;
-  /* padding: 0.5rem; */
-  /* box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.4); */
-  /* border-radius: 8px; */
-  /* text-decoration: #64664c underline;
-  text-decoration-thickness: 0.5rem;
-  text-underline-offset: 1rem; */
+  border-bottom: 0.4rem solid #64664c;
 }
 
 .project-title {
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 40px;
   font-weight: 700;
 }
@@ -330,25 +314,6 @@ p {
   transform: scale(1.065);
 }
 
-/* .project-1 .fidelity img {  
-  animation-direction: normal;
-} */
-
-/* .project-1 .fidelity:hover {
-  transform: scale(1.25) translateY(10px);
-} */
-
-/* 
-@keyframes slide {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  100% {
-    transform: translate(0, -20px);
-  }
-} */
-
 .btn-launch-button,
 .btn-launch-button:link,
 .btn-launch-button:active,
@@ -357,7 +322,7 @@ p {
   border-radius: 30px;
   color: var(--branding-color);
   font-size: 20px;
-  font-family: var(--default-font-family);
+  /* font-family: var(--default-font-family); */
   font-weight: 700;
   line-height: 27px;
   padding: 15px 30px;
@@ -450,31 +415,6 @@ p {
   color: var(--secondary-color);
 }
 
-/* .fa-brands,
-.fa-solid,
-.fab {
-  position: relative;
-  top: -46px;
-} */
-
-/* .fa-spin {
-  animation-duration: 3s;
-} */
-
-/* .fa-react:hover {
-  transition: 0.9s;
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-} */
-
-/* .fa-react:hover {
-  transition: all 100ms ease-in-out;
-  font-size: 26px;
-} */
-
 .shadow {
   box-shadow: rgb(0 0 0 / 40%) 1px 4px 12px;
   box-sizing: border-box;
@@ -496,9 +436,6 @@ footer .social-links a:visited {
   color: var(--branding-color);
   font-size: 37px;
   transition: 0.4s ease;
-  /* border: 2px solid white; */
-  /* background-color: #6d6b6d; */
-  /* border-radius: 100%; */
 }
 
 footer .social-links a:hover,
@@ -509,9 +446,10 @@ footer .social-links a:hover,
 
 footer .email-link {
   text-decoration: none;
+  text-transform: none;
   color: var(--quinary-color);
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 700;
   text-align: center;
   margin: 15px 0px 0px;
   transition: 0.4s ease;
@@ -536,14 +474,14 @@ footer {
 
 @media (max-width: 1400px) {
   h2 {
-    font-size: 1.65rem;
+    font-size: 1.55rem;
   }
   .project-description {
     margin-bottom: 4rem;
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1400px) {
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
   h1 {
     font-size: 78px;
   }
@@ -562,6 +500,10 @@ footer {
 }
 
 @media (max-width: 1200px) {
+  h2 {
+    font-size: 1.4rem;
+  }
+
   .project-title {
     font-size: 30px;
     margin-bottom: 40px;
@@ -585,6 +527,9 @@ footer {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  h1 {
+    font-size: 70px;
+  }
   .btn-branding {
     margin-top: -32px;
   }
@@ -598,12 +543,16 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   h1 {
-    font-size: 56px;
+    font-size: 50px;
   }
 
-  .hero {
-    margin-top: -20px;
+  h2 {
+    font-size: 1rem;
   }
+
+  /* .hero {
+    margin-top: -37px;
+  } */
 
   .below-hero {
     margin-bottom: 20px;
@@ -647,7 +596,7 @@ footer {
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   h1 {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .hero {
@@ -704,10 +653,6 @@ footer {
     font-size: 35px;
     padding-top: 0px;
   }
-
-  /* #project-header {
-    padding-top: 92px;
-  } */
 
   .project-header-font {
     margin-top: 0;
