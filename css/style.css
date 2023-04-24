@@ -207,12 +207,13 @@ li a[href="#home"] {
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 6rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 1.89rem;
+  font-size: 2.2rem;
+  text-transform: none;
 }
 
 h3 {
@@ -221,7 +222,6 @@ h3 {
 
 p {
   font-size: 1.125rem;
-  /* font-family: var(--default-font-family); */
   text-transform: none;
 }
 
@@ -239,8 +239,7 @@ p {
 .hero .btn-branding:active,
 .hero .btn-branding:visited {
   background: var(--tertiary-color);
-  font-size: 20px;
-  /* font-family: var(--default-font-family); */
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 27px;
   padding: 15px 30px;
@@ -268,14 +267,14 @@ p {
 .project-header-font,
 .about-header-font,
 .misc-header-font {
-  font-size: 45px;
+  font-size: 2.813rem;
   font-weight: 700;
   border-bottom: 0.4rem solid #64664c;
 }
 
 .project-title {
   text-align: center;
-  font-size: 30px;
+  font-size: 1.875rem;
   margin-bottom: 40px;
   font-weight: 700;
 }
@@ -313,8 +312,7 @@ p {
   background: var(--quaternary-color);
   border-radius: 30px;
   color: var(--branding-color);
-  font-size: 20px;
-  /* font-family: var(--default-font-family); */
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 27px;
   padding: 15px 30px;
@@ -379,7 +377,7 @@ p {
 
 .project-description .fa-github {
   color: var(--branding-color);
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .light .project-description .fa-github {
@@ -389,7 +387,7 @@ p {
 .project-description .fa-react {
   color: #44d8ff;
   margin: 0px 8px;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .light .project-description .fa-github {
@@ -426,21 +424,21 @@ footer .social-links a:visited {
   height: 50px;
   margin: 0 11px;
   color: var(--branding-color);
-  font-size: 37px;
+  font-size: 2.313rem;
   transition: 0.4s ease;
 }
 
 footer .social-links a:hover,
 .light footer .social-links a:hover {
   color: var(--quinary-color);
-  font-size: 42px;
+  font-size: 2.625rem;
 }
 
 footer .email-link {
   text-decoration: none;
   text-transform: none;
   color: var(--quinary-color);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
   margin: 15px 0px 0px;
@@ -465,27 +463,30 @@ footer {
 }
 
 @media (max-width: 1400px) {
-  h2 {
-    font-size: 1.55rem;
-  }
   .project-description {
     margin-bottom: 4rem;
   }
-}
 
-@media only screen and (min-width: 1200px) and (max-width: 1400px) {
   h1 {
-    font-size: 78px;
+    font-size: 4.875rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 1200px) {
+  h1 {
+    font-size: 4.375rem;
+  }
+
   h2 {
-    font-size: 1.4rem;
+    font-size: 1.62rem;
   }
 
   .project-title {
-    font-size: 30px;
+    font-size: 1.875rem;
     margin-bottom: 40px;
   }
 
@@ -502,15 +503,11 @@ footer {
   }
 
   .project-description .fa-react {
-    font-size: 32px;
+    font-size: 2rem;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  h1 {
-    font-size: 70px;
-  }
-
   .hero {
     padding: 175px 20px;
   }
@@ -533,10 +530,6 @@ footer {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  h1 {
-    font-size: 50px;
-  }
-
   .hero {
     padding: 135px 20px;
   }
@@ -551,12 +544,20 @@ footer {
 }
 
 @media (max-width: 992px) {
+  h1 {
+    font-size: 3.125rem;
+  }
+
   h2 {
-    font-size: 1.15rem;
+    font-size: 1.182rem;
   }
 }
 
 @media (max-width: 768px) {
+  h2 {
+    font-size: 0.849999934rem;
+  }
+
   .fixed-top {
     left: 0;
     right: 0;
@@ -565,7 +566,7 @@ footer {
   nav {
     padding: 0px 10px;
     justify-content: center;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   .project-description {
@@ -589,7 +590,7 @@ footer {
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 
   .hero {
@@ -606,11 +607,14 @@ footer {
   .light li a[href="#home"],
   nav ul li a {
     font-size: 0.875rem;
-    font-weight: 700;
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
+  }
+
+  h2 {
+    font-size: 1.38rem;
   }
 
   .hero-enchilada {
@@ -644,7 +648,7 @@ footer {
   }
 
   .project-title {
-    font-size: 35px;
+    font-size: 2.188rem;
     padding-top: 0px;
   }
 
@@ -660,15 +664,56 @@ footer {
   }
 }
 
-@media (max-width: 401px) {
+@media (max-width: 410px) {
   li a[href="#home"],
   .light li a[href="#home"],
   nav ul li a {
     font-size: 0.75rem;
-    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 1.7rem;
   }
 
   h2 {
-    font-size: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 390px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 378px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 364px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 331px) {
+  li a[href="#home"],
+  .light li a[href="#home"],
+  nav ul li a {
+    font-size: 0.7rem;
   }
 }
