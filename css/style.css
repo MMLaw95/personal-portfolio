@@ -267,10 +267,9 @@ p {
 .project-header-font,
 .about-header-font,
 .misc-header-font {
-  font-size: 2.813rem;
+  font-size: 3rem;
   font-weight: 700;
   border-bottom: 0.4rem solid #64664c;
-  text-transform: uppercase;
 }
 
 .project-title {
