@@ -269,6 +269,7 @@ p {
 .misc-header-font {
   font-size: 3rem;
   font-weight: 700;
+  text-transform: uppercase;
   border-bottom: 0.4rem solid #64664c;
 }
 
