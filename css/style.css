@@ -502,6 +502,7 @@ footer {
 
   #project-header {
     padding: 0px 20px 75px;
+    scroll-margin-top: 5rem;
   }
 
   .hero {
@@ -671,6 +672,12 @@ footer {
   .epilogue-section {
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .hero .fa-angles-down {
+    display: none;
   }
 }
 
