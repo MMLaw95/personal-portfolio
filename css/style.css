@@ -72,6 +72,10 @@ body.light {
   background: var(--secondary-color);
 }
 
+.light .hero .fa-angles-down {
+  color: var(--secondary-color);
+}
+
 .light .page-name {
   color: var(--quinary-color);
 }
@@ -255,6 +259,7 @@ p {
 
 .hero .fa-angles-down {
   color: var(--branding-color);
+  /* margin-top: 80px; */
 }
 
 .name {
