@@ -715,6 +715,9 @@ footer {
   h2 {
     font-size: 1.2rem;
   }
+
+  #project-header {
+    padding: 130px 20px 75px;
 }
 
 @media (max-width: 364px) {
