@@ -250,7 +250,7 @@ p {
   border-color: var(--branding-color);
   transition: 0.4s ease;
   box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.4);
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .hero .btn-branding:hover {
@@ -324,7 +324,7 @@ p {
 .btn-launch-button:active,
 .btn-launch-button:visited {
   background: var(--quaternary-color);
-  border-radius: 30px;
+  border-radius: 10px;
   color: var(--branding-color);
   font-size: 1.25rem;
   font-weight: 700;
