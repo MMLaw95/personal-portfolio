@@ -65,12 +65,12 @@ body.light {
   color: var(--branding-color);
 }
 
-.light .hero .light .btn-branding,
+/* .light .hero .light .btn-branding,
 .light .hero .btn-branding:link,
 .light .hero .btn-branding:active,
 .light .hero .btn-branding:visited {
   background: var(--secondary-color);
-}
+} */
 
 .light .hero .fa-angles-down {
   color: var(--secondary-color);
@@ -242,7 +242,15 @@ p {
 .hero .btn-branding:link,
 .hero .btn-branding:active,
 .hero .btn-branding:visited {
-  background: var(--tertiary-color);
+  /* background: var(--tertiary-color); */
+  background: linear-gradient(
+    to right,
+    #99816b,
+    #8c7a62,
+    #7f7459,
+    #716d52,
+    #64664c
+  );
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 27px;
@@ -254,7 +262,15 @@ p {
 }
 
 .hero .btn-branding:hover {
-  background-color: var(--quaternary-color);
+  /* background-color: var(--quaternary-color); */
+  background: linear-gradient(
+    to left,
+    #99816b,
+    #8c7a62,
+    #7f7459,
+    #716d52,
+    #64664c
+  );
 }
 
 .hero .fa-angles-down {
@@ -323,7 +339,15 @@ p {
 .btn-launch-button:link,
 .btn-launch-button:active,
 .btn-launch-button:visited {
-  background: var(--quaternary-color);
+  /* background: var(--quaternary-color); */
+  background: linear-gradient(
+    to right,
+    #99816b,
+    #8c7a62,
+    #7f7459,
+    #716d52,
+    #64664c
+  );
   border-radius: 30px;
   color: var(--branding-color);
   font-size: 1.25rem;
@@ -336,7 +360,15 @@ p {
 }
 
 .btn-launch-button:hover {
-  background-color: var(--quinary-color);
+  /* background-color: var(--quinary-color); */
+  background: linear-gradient(
+    to left,
+    #99816b,
+    #8c7a62,
+    #7f7459,
+    #716d52,
+    #64664c
+  );
   color: var(--branding-color);
   outline-color: var(--branding-color);
 }
