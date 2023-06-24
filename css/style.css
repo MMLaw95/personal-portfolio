@@ -244,7 +244,7 @@ p {
 .hero .btn-branding:visited {
   /* background: var(--tertiary-color); */
   background: linear-gradient(
-    to right,
+    to left,
     #99816b,
     #8c7a62,
     #7f7459,
@@ -264,7 +264,7 @@ p {
 .hero .btn-branding:hover {
   /* background-color: var(--quaternary-color); */
   background: linear-gradient(
-    to left,
+    to right,
     #99816b,
     #8c7a62,
     #7f7459,
@@ -341,7 +341,7 @@ p {
 .btn-launch-button:visited {
   /* background: var(--quaternary-color); */
   background: linear-gradient(
-    to right,
+    to left,
     #99816b,
     #8c7a62,
     #7f7459,
@@ -362,7 +362,7 @@ p {
 .btn-launch-button:hover {
   /* background-color: var(--quinary-color); */
   background: linear-gradient(
-    to left,
+    to right,
     #99816b,
     #8c7a62,
     #7f7459,
