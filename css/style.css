@@ -278,6 +278,14 @@ p {
   /* margin-top: 80px; */
 }
 
+.hero .fa-angles-down:hover {
+  color: var(--quaternary-color);
+}
+
+.light .hero .fa-angles-down:hover {
+  color: var(--quinary-color);
+}
+
 .name {
   background: var(--branding-color);
   color: #22252e;
