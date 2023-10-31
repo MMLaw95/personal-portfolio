@@ -308,25 +308,47 @@
       }
     }
 
-    const body = document.querySelector("body"),
-    toggle = document.querySelector(".toggle");
+    // const body = document.querySelector("body"),
+    // toggle = document.querySelector(".toggle");
 
+    // let getMode = localStorage.getItem("mode");
+    // if (getMode && getMode === "light") {
+    //  body.classList.add("light");
+    //  toggle.classList.add("active")
+    // }
+
+    // toggle.addEventListener("click", () => {
+    //   body.classList.toggle("light");
+
+    //   if (!body.classList.contains("light")) {
+    //     return localStorage.setItem("mode", "dark");
+    //   }
+    //   localStorage.setItem("mode", "light");
+    // });
+
+    // toggle.addEventListener("click", () => toggle.classList.toggle("active"));
+
+    const body = document.querySelector("body");
+    const toggle = document.querySelector(".toggle");
+
+    // Check if the user's preference is stored in localStorage
     let getMode = localStorage.getItem("mode");
-    if (getMode && getMode === "light") {
-     body.classList.add("light");
-     toggle.classList.add("active")
+    if (getMode === "light") {
+      body.classList.add("light");
+      toggle.classList.add("active");
     }
 
     toggle.addEventListener("click", () => {
       body.classList.toggle("light");
+      toggle.classList.toggle("active");
 
-      if (!body.classList.contains("light")) {
-        return localStorage.setItem("mode", "dark");
+      if (body.classList.contains("light")) {
+        localStorage.setItem("mode", "light");
+      } else {
+        localStorage.setItem("mode", "dark");
       }
-      localStorage.setItem("mode", "light");
     });
 
-    toggle.addEventListener("scroll", () => toggle.classList.toggle("active"));
 
     </script>
   </body>
