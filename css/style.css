@@ -263,6 +263,7 @@ p {
 
 .hero .btn-branding:hover {
   /* background-color: var(--quaternary-color); */
+  color: var(--branding-color);
   background: linear-gradient(
     to right,
     #99816b,
