@@ -573,6 +573,7 @@ footer {
   .hero-enchilada {
     width: 100%;
     height: 100vh;
+    align-content: center;
   }
 
   .project-header-font {
