@@ -513,23 +513,6 @@ footer {
   }
 }
 
-@keyframes appear {
-  from {
-    opacity: 0;
-    scale: 0.5;
-  }
-  to {
-    opacity: 1;
-    scale: 1;
-  }
-}
-
-.block {
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-}
-
 @media (max-width: 1400px) {
   .project-description {
     margin-bottom: 4rem;
@@ -655,6 +638,25 @@ footer {
 
   #contact-header {
     padding-top: 142px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  @keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  
+  .block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
   }
 }
 
